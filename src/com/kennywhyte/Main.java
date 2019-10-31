@@ -1,6 +1,7 @@
 package com.kennywhyte;
 
 import java.awt.*;
+import java.text.NumberFormat;
 import java.util.Arrays;
 import java.util.Date;
 
@@ -11,5 +12,8 @@ public class Main {
         int result = Math.max(12, 10);
         double rand = (int) (Math.random() * 200);
         System.out.println(rand);
+
+
+        System.out.println(NumberFormat.getPercentInstance().format(1234566.7890));
     }
 }
