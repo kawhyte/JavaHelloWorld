@@ -10,7 +10,7 @@ public class Main {
 
     public static void main(String[] args) {
 
-        Scanner scanner = new Scanner(System.in);
+        /*Scanner scanner = new Scanner(System.in);
 
         System.out.print("Enter your Principle: ");
         double principal = scanner.nextDouble();
@@ -27,6 +27,23 @@ public class Main {
 
         double mortgage = (double) Math.round(payment * 100) / 100;
 
-        System.out.println("Mortgage " + mortgage);
+        System.out.println("Mortgage " + mortgage);*/
+
+
+        String[] fruits = {"apple", "banana", "Chicken"};
+
+
+        System.out.println("Outside the loop: " + Arrays.toString(fruits));
+
+
+        for (int i = 0; i < fruits.length; i++) {
+            System.out.println(fruits[i]);
+        }
+
+        for (String fruit : fruits
+        ) {
+            System.out.println("Last: " + fruit);
+        }
+
     }
 }
