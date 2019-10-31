@@ -4,16 +4,29 @@ import java.awt.*;
 import java.text.NumberFormat;
 import java.util.Arrays;
 import java.util.Date;
+import java.util.Scanner;
 
 public class Main {
 
     public static void main(String[] args) {
-        Math.round(3.14);
-        int result = Math.max(12, 10);
-        double rand = (int) (Math.random() * 200);
-        System.out.println(rand);
 
+        Scanner scanner = new Scanner(System.in);
 
-        System.out.println(NumberFormat.getPercentInstance().format(1234566.7890));
+        System.out.print("Enter your Principle: ");
+        double principal = scanner.nextDouble();
+
+        System.out.print("Enter your Annual Interest Rate: ");
+        double rate = scanner.nextDouble();
+
+        System.out.print("Period:(Years): ");
+        int period = scanner.nextInt();
+
+        double interestRate = rate / 100 / 12;
+
+        double payment = (principal * interestRate) / (1 - Math.pow(1 + interestRate, -period));
+
+        double mortgage = (double) Math.round(payment * 100) / 100;
+
+        System.out.println("Mortgage " + mortgage);
     }
 }
