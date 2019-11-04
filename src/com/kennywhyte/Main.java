@@ -10,6 +10,9 @@ public class Main {
 
     public static void main(String[] args) {
 
+        String message = greetUser("Kenny", "Whyte");
+        System.out.println(message);
+
         /*Scanner scanner = new Scanner(System.in);
 
         System.out.print("Enter your Principle: ");
@@ -30,20 +33,25 @@ public class Main {
         System.out.println("Mortgage " + mortgage);*/
 
 
-        String[] fruits = {"apple", "banana", "Chicken"};
+//        String[] fruits = {"apple", "banana", "Chicken"};
+//
+//
+//        System.out.println("Outside the loop: " + Arrays.toString(fruits));
+//
+//
+//        for (int i = 0; i < fruits.length; i++) {
+//            System.out.println(fruits[i]);
+//        }
+//
+//        for (String fruit : fruits
+//        ) {
+//            System.out.println("Last: " + fruit);
+//        }
+
+    }
 
 
-        System.out.println("Outside the loop: " + Arrays.toString(fruits));
-
-
-        for (int i = 0; i < fruits.length; i++) {
-            System.out.println(fruits[i]);
-        }
-
-        for (String fruit : fruits
-        ) {
-            System.out.println("Last: " + fruit);
-        }
-
+    public static String greetUser(String firstName, String lastName) {
+        return "Hello " + firstName + " " + lastName;
     }
 }
