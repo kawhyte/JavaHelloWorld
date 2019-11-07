@@ -10,7 +10,7 @@ public class Main {
 
     public static void main(String[] args) {
 
-        //TextBox textbox1 = new TextBox();
+        //TextBox textbox1 = new TextBox();//test
         var textbox1 = new TextBox();
 
         textbox1.setText(" Box 1");
