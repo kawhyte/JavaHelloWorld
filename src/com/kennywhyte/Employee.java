@@ -6,8 +6,13 @@ public class Employee {
     private int _hourlyRate;
     //public int extraHours;
 
+    public Employee(int baseSalary, int _hourlyRate) {
+        setBaseSalary(baseSalary);
+        set_hourlyRate(_hourlyRate);
+    }
 
-    public void setBaseSalary(int baseSalary) {
+
+    private void setBaseSalary(int baseSalary) {
         if (baseSalary <= 0) throw new IllegalArgumentException("Salary cannot be zero");
         this.baseSalary = baseSalary;
     }
@@ -16,7 +21,7 @@ public class Employee {
         return baseSalary;
     }
 
-    public void set_hourlyRate(int _hourlyRate) {
+    private void set_hourlyRate(int _hourlyRate) {
 
         this._hourlyRate = _hourlyRate;
     }
