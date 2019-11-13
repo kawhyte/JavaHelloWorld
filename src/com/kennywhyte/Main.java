@@ -9,20 +9,12 @@ import java.util.Scanner;
 public class Main {
 
     public static void main(String[] args) {
+        var employee = new Employee();
+        employee.baseSalary = 50000;
+        employee.hourlyRate = 20;
+        int wage = employee.calculateWage(10);
 
-        //TextBox textbox1 = new TextBox();//test
-        var textbox1 = new TextBox();
-
-        textbox1.setText(" Box 1");
-        System.out.println(textbox1.text.toUpperCase());
-
-        var textbox2 = new TextBox();
-        textbox2.setText(" Box 2");
-        System.out.println(textbox2.text.toUpperCase());
+        System.out.println(wage);
     }
 
-
-    public static String greetUser(String firstName, String lastName) {
-        return "Hello " + firstName + " " + lastName;
-    }
 }
