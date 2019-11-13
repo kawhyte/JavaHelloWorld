@@ -8,11 +8,11 @@ public class Main {
 //        browser.navigate("address");
 
 
-        var employee = new Employee(10, 30);
+        var employee = new Employee(1000, 30);
         //employee.setBaseSalary(50);
         //employee.set_hourlyRate(20);
-        employee.calculateWage(1);
-        int wage = employee.calculateWage(10);
+        employee.calculateWage();
+        int wage = employee.calculateWage();
 
         System.out.println(wage);
     }
