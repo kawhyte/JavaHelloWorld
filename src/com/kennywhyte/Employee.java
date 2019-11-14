@@ -5,14 +5,21 @@ public class Employee {
     private int baseSalary;
     private int _hourlyRate;
     //public int extraHours;
+    public static int numberOfEmployees;
 
     public Employee(int baseSalary) {
         this(baseSalary, 0);
     }
 
+    public static void print() {
+        System.out.println(numberOfEmployees);
+
+    }
+
     public Employee(int baseSalary, int _hourlyRate) {
         setBaseSalary(baseSalary);
         set_hourlyRate(_hourlyRate);
+        numberOfEmployees++;
     }
 
 
