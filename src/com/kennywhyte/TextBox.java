@@ -1,8 +1,8 @@
 package com.kennywhyte;
 
-public class TextBox {
+public class TextBox extends UIControl {
 
-    public String text = "";
+    private String text = "";
 
     public void setText(String text) {
 
