@@ -1,5 +1,7 @@
 package com.kennywhyte;
 
+import org.w3c.dom.Text;
+
 public class Main {
 
     public static void main(String[] args) {
@@ -14,12 +16,14 @@ public class Main {
 
 
         var control = new TextBox();
+        control.setText("hello");
 
-        control.disable();
+//
+//        control.disable();
+//
+//        System.out.println(control.hashCode());
+        System.out.println(control.toString());
 
-        System.out.println(control);
-        System.out.println(control.isEnabled());
     }
-
 }
 
